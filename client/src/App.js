@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
+import ListOfUsers from "./containers/Listofuserscontainer";
+import SignUp from "./components/signUp";
 
 class App extends Component {
   constructor() {
@@ -10,11 +12,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        Client
+        <ListOfUsers></ListOfUsers>
+        <SignUp></SignUp>
       </div>
     );
   }
 }
 export default (App);
-
-
