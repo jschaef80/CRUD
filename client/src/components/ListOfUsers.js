@@ -9,7 +9,7 @@ const ListOfUsers = (props) => {
             <p>List of users</p>
             {
                 props.users.map(user => {
-                    return <p>{user.firstName}</p>
+                    return <div>{user.firstName} {user.lastname} {user.location}</div>
                 })
             }
         </div>
