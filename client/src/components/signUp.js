@@ -19,10 +19,6 @@ export default class SignUp extends Component {
         console.log(e.target.value)
     }
     
-
-    handleClick = (e) => {
-        console.log(e.target.value)
-    }
     render() {
         return (
             <form className='card'>
@@ -36,7 +32,7 @@ export default class SignUp extends Component {
                 <label>location: </label>
                     <input className='field' type='text 'placeholder='Boston'></input> 
                 
-                <button id='registerBtn' onClick={this.handleClick}> click yo </button>   
+                <button id='registerBtn' onClick={this.handleClick}>Submit</button>
             </form>
         )
     }

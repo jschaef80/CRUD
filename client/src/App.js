@@ -12,8 +12,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ListOfUsers></ListOfUsers>
         <SignUp></SignUp>
+        <ListOfUsers></ListOfUsers>
       </div>
     );
   }

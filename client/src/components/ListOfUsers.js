@@ -3,15 +3,11 @@ import React from 'react'
 
 
 const ListOfUsers = (props) => {
-    console.log('props', props)
     return (
-        <div className='card'>                
+        <div className='card'>
             <p>List of users</p>
-            {
-                props.users.map(user => {
-                    return <div>{user.firstName} {user.lastname} {user.location}</div>
-                })
-            }
+            {props.users.map(user => {
+                return <div>{user.firstName} {user.lastname} from {user.location} <button id='deleteBtn' >Delete</button></div>})}
         </div>
     )
 }
